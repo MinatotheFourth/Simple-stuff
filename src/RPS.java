@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class RPS 
+{
+
+	public static void main(String[] args) 
+	{
+		//Declare variables for the user's and computer's inputs along with the scanner for user input
+		int compGuess, userGuess;
+		compGuess = (int) (Math.random() * 3);
+		Scanner input = new Scanner(System.in);
+		
+		//Ask the user to input their guess
+		System.out.println("Scissors (0), Rock (1), Paper (2)");
+		userGuess = input.nextInt();
+		
+		//It's a draw
+		if(userGuess == compGuess)
+		{
+			System.out.println("It's a draw!");
+		}
+		
+		//User picks scissors and computer picks paper
+		else if(userGuess == 0 && compGuess == 2)
+		{
+			System.out.println("The computer guessed paper, you win!");
+		}
+		
+		//User picks scissors, but computer picks rock
+		else if(userGuess == 0 && compGuess == 1)
+		{
+			System.out.println("The computer guessed Rock, you lose!");
+		}
+		
+		//User picks rock and computer picks paper
+		else if(userGuess == 1 && compGuess == 2)
+		{
+			System.out.println("The computer guessed paper, you lose!");
+		}
+		
+		//User picks Rock, but computer picks scissors
+		else if(userGuess == 1 && compGuess == 0)
+		{
+			System.out.println("The computer guessed Scissors, you win!");
+		}
+		
+		//User picks paper, and computer picks Scissors
+		else if(userGuess == 2 && compGuess == 0)
+		{
+			System.out.println("The computer guessed Scissors, you lose!");
+		}
+		
+		//User picks paper, but computer picks rock
+		else if(userGuess == 2 && compGuess == 1)
+		{
+			System.out.println("The computer guessed Rock, you win!");
+		}
+		
+		
+	}
+
+}
