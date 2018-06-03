@@ -9,9 +9,24 @@ public class Change
 		int dollars, quarters, dimes, nickles, pennies;
 		Scanner input = new Scanner(System.in);
 		
+		//This is where the user will input their payment
 		System.out.println("Your total is 378.93. Please pay now");
 		payment = input.nextDouble();
 		
+		//Of course, someone will troll around, so I had a contingency plan
+		if(payment < total)
+			System.out.println("That's not enough!");
+		
+		//And there's even a way to contain them too
+		do
+		{
+			System.out.println("Enter a valid price!");
+			payment = input.nextDouble();
+			
+		}while(payment < total);
+		
+		
+		//Calculates the change in dollars and coins
 		change = payment - total;
 		cents = (int)(change * 100);
 		
@@ -31,6 +46,8 @@ public class Change
 		
 		pennies = (int) cents;
 		
+		
+		//Outputs our results
 		System.out.println("Your change is $" + (int)(change * 100) / 100.0);
 		System.out.println("This means you're getting " + dollars + " dollars, " + quarters + " quarters, " + dimes + " dimes, " + nickles + " nickels, and " + pennies 
 				+ " pennies.");

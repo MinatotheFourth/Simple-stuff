@@ -14,6 +14,15 @@ public class RPS
 		System.out.println("Scissors (0), Rock (1), Paper (2)");
 		userGuess = input.nextInt();
 		
+		if(userGuess > 2)
+			do
+			{
+				System.out.println("Don't be shy. The computer doesn't bite. Enter a valid number.");
+				userGuess = input.nextInt();
+				
+			}while(userGuess > 2);
+		
+		
 		//It's a draw
 		if(userGuess == compGuess)
 		{

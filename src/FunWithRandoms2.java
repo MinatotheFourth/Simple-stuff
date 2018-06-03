@@ -1,4 +1,8 @@
-
+/*
+ * 
+ * This program is nothing really. It just prints out random months using an integer randomizer.
+ * What ever number it gets will output the corresponding month (eg: January 1, February 2, etc.)
+ */
 public class FunWithRandoms2 
 {
 
