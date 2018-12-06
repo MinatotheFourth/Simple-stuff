@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//This is a change program that determines how many coins will be given upon receiving change.
 public class Change 
 {
 	public static void main(String[] args) 
@@ -15,6 +15,7 @@ public class Change
 		
 		//Of course, someone will troll around, so I had a contingency plan
 		if(payment < total)
+		{
 			System.out.println("That's not enough!");
 		
 		//And there's even a way to contain them too
@@ -25,7 +26,7 @@ public class Change
 			
 		}while(payment < total);
 		
-		
+		}
 		//Calculates the change in dollars and coins
 		change = payment - total;
 		cents = (int)(change * 100);

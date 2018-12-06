@@ -1,3 +1,4 @@
+//This program is just one made for practice. It tells the user to enter the sum of 3 numbers. If they're wrong, I'll let them know
 import java.util.Random;
 import java.util.Scanner;
 

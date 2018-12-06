@@ -1,3 +1,4 @@
+//This is just a program that calculates a person's monthly payment based on the interest formula
 import java.util.Scanner;
 
 public class MonthlyPayment 
@@ -33,8 +34,8 @@ public class MonthlyPayment
 		totalPayment = monthlyPayment * years * 12;
 		
 		//Outputs the results.
-		System.out.println("Your monthly payment is " + (int)(monthlyPayment * 100) / 100.0);
-		System.out.println("Your total payment is " + (int)(totalPayment * 100) / 100.0);
+		System.out.println("Your monthly payment is " + (int)(monthlyPayment * 100) / 100.00);
+		System.out.println("Your total payment is " + (int)(totalPayment * 100) / 100.00);
 	}
 
 }

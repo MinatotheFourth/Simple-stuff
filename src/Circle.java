@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//This program finds out if certain points lie within a circle
 public class Circle
 {
 
@@ -10,11 +10,11 @@ public class Circle
 		Scanner input = new Scanner(System.in);
 		
 		//Ask to enter the x coordinates
-		System.out.println("Enter a point with two coordinates.");
+		System.out.println("Enter a point with two coordinates. First the x coordinate");
 		x = input.nextInt();
 		
 		//Now, the y coordinate
-		System.out.println("Now, the second one.");
+		System.out.println("Now, the y coordinate.");
 		y = input.nextInt();
 
 		//calculates x2 -x1 squared and y2 - y1 squared

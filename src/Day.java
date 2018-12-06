@@ -21,8 +21,21 @@ public class Day
 		year = input.nextInt();
 		
 		//Asks for the month number (1 for January, 2 for February, etc)
-		System.out.println("Enter the month");
+		System.out.println("Enter the month as an integer (1 = January, 2 = February, etc)");
 		m = input.nextInt();
+		
+		//The formula turns January and February to 13 and 14 respectively, and the year variable must be decreased by 1.So, this block converts them after input.
+		if(m == 1)
+		{
+			m = 13;
+			year = year - 1;
+		}
+		
+		else if(m == 2)
+		{
+			m = 14;
+			year = year - 1;
+		}
 		
 		//Asks for the numerical day of the month
 		System.out.println("Enter the day of the month.");

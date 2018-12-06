@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//This program tests if an input number is divisible by 5 and 6, individually, or neither.
 public class Divisibility 
 {
 
@@ -15,7 +16,7 @@ public class Divisibility
 		number = input.nextInt();
 
 		
-		//This statement checks if the number is divisble by 5 AND 6
+		//This statement checks if the number is divisible by 5 AND 6
 		if(number % 5 != 0 || number % 6 != 0)
 		{
 			check = false;

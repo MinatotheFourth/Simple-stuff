@@ -1,3 +1,4 @@
+//A rock paper scissors program. It only executes once since I haven't placed in a loop
 import java.util.Scanner;
 
 public class RPS 
@@ -14,6 +15,7 @@ public class RPS
 		System.out.println("Scissors (0), Rock (1), Paper (2)");
 		userGuess = input.nextInt();
 		
+		//This is for when the user tries to be funny
 		if(userGuess > 2)
 			do
 			{

@@ -1,6 +1,6 @@
 /*
  * This program will ask for the offset of the time-zone of the user's choice.
- * It will also display the user's desiered time in military time or 24-hour format.
+ * It will also display the user's desired time in military time or 24-hour format.
  */
 import java.util.Scanner;
 

@@ -1,3 +1,4 @@
+//This program is the full quadratic formula and checks for roots.
 import java.util.Scanner;
 
 public class QuadraticFormula 
